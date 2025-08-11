@@ -1,10 +1,8 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { Heart, Code, Coffee } from "lucide-react"
+import { motion } from "framer-motion";
+import { Heart, Code, Coffee } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="py-12 border-t border-white/10 bg-slate-900/50 backdrop-blur-sm">
@@ -24,12 +22,11 @@ export default function Footer() {
             Muxammadaziz Xakimov
           </motion.div>
 
-          {/* Tagline */}
           <p className="text-gray-400 mb-6 max-w-md mx-auto">
-            FullStack Developer passionate about creating innovative web solutions
+            FullStack Developer passionate about creating innovative web
+            solutions
           </p>
 
-          {/* Made with love */}
           <motion.div
             className="flex items-center justify-center space-x-2 text-gray-400 mb-6"
             initial={{ opacity: 0 }}
@@ -38,7 +35,10 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <span>Made with</span>
-            <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}>
+            <motion.div
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY }}
+            >
               <Heart className="w-5 h-5 text-red-400 fill-current" />
             </motion.div>
             <span>and</span>
@@ -47,13 +47,16 @@ export default function Footer() {
             <Coffee className="w-5 h-5 text-yellow-600" />
           </motion.div>
 
-          {/* Copyright */}
-          <div className="text-gray-500 text-sm">© {currentYear} Muxammadaziz Xakimov. All rights reserved.</div>
+          <div className="text-gray-500 text-sm">
+            © {currentYear} Muxammadaziz Xakimov. All rights reserved.
+          </div>
 
           {/* Tech Stack Credit */}
-          <div className="text-gray-600 text-xs mt-2">Built with React.js, Next.js, Tailwind CSS & Framer Motion</div>
+          <div className="text-gray-600 text-xs mt-2">
+            Built with React.js, Tailwind CSS & Framer Motion
+          </div>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }
