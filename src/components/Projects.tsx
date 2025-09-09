@@ -7,6 +7,7 @@ import Test1 from "../assets/test1.png";
 import Test2 from "../assets/test2.png";
 import Test3 from "../assets/test3.png";
 import Timer from "../assets/timer.png";
+import Computers from "../assets/computers.png";
 
 const myProjects = [
   {
@@ -16,6 +17,13 @@ const myProjects = [
       "This project is a workspace created for people to collaborate on their projects, to find employees, or to find a job for themselves.",
     frontLink: "https://github.com/khakimovM/work-room-main",
     backEndLink: "https://github.com/khakimovM/work-room-backend-main",
+  },
+  {
+    projectImg: [Computers],
+    name: "A'lo computers",
+    about: `This is a website created for the "A'lo computers" store. This project includes a user panel and an admin panel.`,
+    frontLink: "https://github.com/khakimovM/alo_computers",
+    backEndLink: "https://github.com/khakimovM/alo_computers",
   },
   {
     projectImg: [Weather1, Weather2],
