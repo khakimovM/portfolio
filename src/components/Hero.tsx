@@ -129,9 +129,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
           >
-            22-year-old passionate developer from Fergana, Uzbekistan. Currently
-            mastering React.js at Najot Ta'lim after completing Node.js backend
-            development.
+            What's up guys! I'm a 22-year-old FullStack Developer, currently
+            working as a tutor at Mars IT School in Tashkent. I’m passionate
+            about building scalable web applications and mentoring others in
+            modern web technologies. One of my biggest ambitions is to work at
+            Google headquarters in the future.
           </motion.p>
 
           {/* Location */}
